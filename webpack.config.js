@@ -5,10 +5,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
+    vendor: ['antd/dist/antd.min.css'],
     app: './index.tsx'
   },
   mode: 'development',
-  devtool: 'inline-source-map',
+  devtool: 'cheap-module-eval-source-map',
   resolve: {
     modules: ['src', 'node_modules'],
     extensions: ['.ts', '.tsx', '.js', '.json']
@@ -21,11 +22,11 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader'
+        use: [/* 'babel-loader?cacheDirectory', */ 'awesome-typescript-loader']
       },
       {
         test: /\.js$/,
-        loader: 'source-map-loader'
+        use: ['babel-loader?cacheDirectory']
       },
       {
         test: /\.css$/,

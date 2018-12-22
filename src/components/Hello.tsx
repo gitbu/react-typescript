@@ -2,7 +2,7 @@ import * as React from "react";
 
 export interface HelloProps { compiler: string }
 
-export class Hello extends React.Component<HelloProps, {}> {
+export default class Hello extends React.Component<HelloProps, {}> {
   render() {
     return (
       <h1>
