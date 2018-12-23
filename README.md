@@ -1,7 +1,7 @@
 # react-typescript
 react+typescirpt实战
 
-##老的react项目迁移到react+typescript，之前的内容不动，新写的用tsx写
+## 老的react项目迁移到react+typescript，之前的内容不动，新写的用tsx写
 
 ### 第一步：安装Typescript、配置tsconfig文件
 
