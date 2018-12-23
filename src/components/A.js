@@ -2,6 +2,6 @@ import React from 'react'
 
 export default () => {
   return (
-    <div>aaaa</div>
+    <div>this is a lasy component </div>
   );
 }

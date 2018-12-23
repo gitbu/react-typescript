@@ -22,7 +22,7 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: [/* 'babel-loader?cacheDirectory', */ 'awesome-typescript-loader']
+        use: ['babel-loader?cacheDirectory',  'awesome-typescript-loader']
       },
       {
         test: /\.js$/,
